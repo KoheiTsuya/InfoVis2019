@@ -14,6 +14,10 @@ function main()
     camera.position.set( 0, 0, 5 );
     scene.add( camera );
 
+    var light = new THREE.PointLight( 0xffffff );
+    light.position.set( 100000, 100000, 100000 );
+    scene.add( light );
+
     var renderer = new THREE.WebGLRenderer();
     renderer.setSize( width, height );
     document.body.appendChild( renderer.domElement );
