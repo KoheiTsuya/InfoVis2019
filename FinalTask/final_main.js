@@ -48,7 +48,7 @@ function main()
     
     var sphere = new THREE.Mesh(
         new THREE.SphereGeometry(5), 
-        new THREE.MeshLambertMaterial( { color: 0xbdb76b } )
+        new THREE.MeshLambertMaterial( { color: 0xbdb001 } )
     );
     sphere.position.x += volume.resolution.x - 10;
     sphere.position.y += volume.resolution.y/2 + 55;
@@ -74,7 +74,7 @@ function main()
       alpha: .8,
       sunDirection: light.position.clone().normalize(),
       sunColor: 0xffffff,
-      waterColor: 0x00bfff,
+      waterColor: 0x00b102,
       side: THREE.DoubleSide,
     } );
 
